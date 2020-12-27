@@ -123,6 +123,10 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="framebase.html#name" class="tsd-kind-icon">name</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="framebase.html#opacity" class="tsd-kind-icon">opacity</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="framebase.html#overflowdirection" class="tsd-kind-icon">overflow<wbr>Direction</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="framebase.html#paddingbottom" class="tsd-kind-icon">padding<wbr>Bottom</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="framebase.html#paddingleft" class="tsd-kind-icon">padding<wbr>Left</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="framebase.html#paddingright" class="tsd-kind-icon">padding<wbr>Right</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="framebase.html#paddingtop" class="tsd-kind-icon">padding<wbr>Top</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="framebase.html#preserveratio" class="tsd-kind-icon">preserve<wbr>Ratio</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="framebase.html#primaryaxisalignitems" class="tsd-kind-icon">primary<wbr>Axis<wbr>Align<wbr>Items</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="framebase.html#primaryaxissizingmode" class="tsd-kind-icon">primary<wbr>Axis<wbr>Sizing<wbr>Mode</a></li>
@@ -288,13 +292,19 @@
 					<div class="tsd-signature tsd-kind-icon">counter<wbr>Axis<wbr>Sizing<wbr>Mode<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"FIXED"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"AUTO"</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mikkmartin/figma-js/blob/b8a23f8/src/figmaTypes.ts#L274">figmaTypes.ts:274</a></li>
+							<li>Defined in <a href="https://github.com/mikkmartin/figma-js/blob/b8a23f8/src/figmaTypes.ts#L298">figmaTypes.ts:298</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>When autolayout is enabled</p>
+							<p>The padding betweeen the bottom border of the frame and its children.
+							This property is only applicable for auto-layout frames.</p>
 						</div>
+						<dl class="tsd-comment-tags">
+							<dt>default</dt>
+							<dd><p>0</p>
+							</dd>
+						</dl>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -303,7 +313,7 @@
 					<div class="tsd-signature tsd-kind-icon">effects<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><a href="effect.html" class="tsd-signature-type">Effect</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mikkmartin/figma-js/blob/b8a23f8/src/figmaTypes.ts#L316">figmaTypes.ts:316</a></li>
+							<li>Defined in <a href="https://github.com/mikkmartin/figma-js/blob/b8a23f8/src/figmaTypes.ts#L340">figmaTypes.ts:340</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -364,7 +374,7 @@
 					<div class="tsd-signature tsd-kind-icon">horizontal<wbr>Padding<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mikkmartin/figma-js/blob/b8a23f8/src/figmaTypes.ts#L280">figmaTypes.ts:280</a></li>
+							<li>Defined in <a href="https://github.com/mikkmartin/figma-js/blob/b8a23f8/src/figmaTypes.ts#L304">figmaTypes.ts:304</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -401,7 +411,7 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Mask<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mikkmartin/figma-js/blob/b8a23f8/src/figmaTypes.ts#L321">figmaTypes.ts:321</a></li>
+							<li>Defined in <a href="https://github.com/mikkmartin/figma-js/blob/b8a23f8/src/figmaTypes.ts#L345">figmaTypes.ts:345</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -421,7 +431,7 @@
 					<div class="tsd-signature tsd-kind-icon">item<wbr>Spacing<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mikkmartin/figma-js/blob/b8a23f8/src/figmaTypes.ts#L292">figmaTypes.ts:292</a></li>
+							<li>Defined in <a href="https://github.com/mikkmartin/figma-js/blob/b8a23f8/src/figmaTypes.ts#L316">figmaTypes.ts:316</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -465,7 +475,7 @@
 					<div class="tsd-signature tsd-kind-icon">layout<wbr>Grids<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><a href="layoutgrid.html" class="tsd-signature-type">LayoutGrid</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mikkmartin/figma-js/blob/b8a23f8/src/figmaTypes.ts#L298">figmaTypes.ts:298</a></li>
+							<li>Defined in <a href="https://github.com/mikkmartin/figma-js/blob/b8a23f8/src/figmaTypes.ts#L322">figmaTypes.ts:322</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -542,7 +552,7 @@
 					<div class="tsd-signature tsd-kind-icon">overflow<wbr>Direction<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mikkmartin/figma-js/blob/b8a23f8/src/figmaTypes.ts#L310">figmaTypes.ts:310</a></li>
+							<li>Defined in <a href="https://github.com/mikkmartin/figma-js/blob/b8a23f8/src/figmaTypes.ts#L334">figmaTypes.ts:334</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -559,6 +569,84 @@
 						<dl class="tsd-comment-tags">
 							<dt>default</dt>
 							<dd><p>NONE</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="paddingbottom" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> padding<wbr>Bottom</h3>
+					<div class="tsd-signature tsd-kind-icon">padding<wbr>Bottom<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mikkmartin/figma-js/blob/b8a23f8/src/figmaTypes.ts#L292">figmaTypes.ts:292</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The padding betweeen the top border of the frame and its children.
+							This property is only applicable for auto-layout frames.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>default</dt>
+							<dd><p>0</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="paddingleft" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> padding<wbr>Left</h3>
+					<div class="tsd-signature tsd-kind-icon">padding<wbr>Left<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mikkmartin/figma-js/blob/b8a23f8/src/figmaTypes.ts#L274">figmaTypes.ts:274</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>When autolayout is enabled</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="paddingright" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> padding<wbr>Right</h3>
+					<div class="tsd-signature tsd-kind-icon">padding<wbr>Right<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mikkmartin/figma-js/blob/b8a23f8/src/figmaTypes.ts#L280">figmaTypes.ts:280</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The padding betweeen the left border of the frame and its children.
+							This property is only applicable for auto-layout frames.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>default</dt>
+							<dd><p>0</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="paddingtop" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> padding<wbr>Top</h3>
+					<div class="tsd-signature tsd-kind-icon">padding<wbr>Top<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mikkmartin/figma-js/blob/b8a23f8/src/figmaTypes.ts#L286">figmaTypes.ts:286</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The padding betweeen the right border of the frame and its children.
+							This property is only applicable for auto-layout frames.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>default</dt>
+							<dd><p>0</p>
 							</dd>
 						</dl>
 					</div>
@@ -807,7 +895,7 @@
 					<div class="tsd-signature tsd-kind-icon">vertical<wbr>Padding<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mikkmartin/figma-js/blob/b8a23f8/src/figmaTypes.ts#L286">figmaTypes.ts:286</a></li>
+							<li>Defined in <a href="https://github.com/mikkmartin/figma-js/blob/b8a23f8/src/figmaTypes.ts#L310">figmaTypes.ts:310</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -923,6 +1011,18 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="framebase.html#overflowdirection" class="tsd-kind-icon">overflow<wbr>Direction</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="framebase.html#paddingbottom" class="tsd-kind-icon">padding<wbr>Bottom</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="framebase.html#paddingleft" class="tsd-kind-icon">padding<wbr>Left</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="framebase.html#paddingright" class="tsd-kind-icon">padding<wbr>Right</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="framebase.html#paddingtop" class="tsd-kind-icon">padding<wbr>Top</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="framebase.html#preserveratio" class="tsd-kind-icon">preserve<wbr>Ratio</a>
