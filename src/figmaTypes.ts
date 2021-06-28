@@ -31,6 +31,8 @@ export type StylesObject = {
 
 export type ScaleMode = 'FILL' | 'FIT' | 'TILE' | 'STRETCH';
 
+export type AutoResize = 'NONE' | 'WIDTH_AND_HEIGHT' | 'HEIGHT'
+
 export type PaintTypeSolid = 'SOLID';
 
 export type PaintTypeGraident =
@@ -92,7 +94,7 @@ export type NodeType =
   | 'FRAME'
   | 'GROUP'
   | 'VECTOR'
-  | 'BOOLEAN'
+  | 'BOOLEAN_OPERATION'
   | 'STAR'
   | 'LINE'
   | 'ELLIPSE'
@@ -473,7 +475,7 @@ export interface Vector extends VectorBase {
 
 /** A group that has a boolean operation applied to it */
 export interface BooleanGroup extends VectorBase {
-  readonly type: 'BOOLEAN';
+  readonly type: 'BOOLEAN_OPERATION';
   /**
    * A string enum with value of "UNION", "INTERSECT", "SUBTRACT", or "EXCLUDE"
    * indicating the type of boolean operation applied
@@ -823,6 +825,8 @@ export interface TypeStyle {
   readonly textDecoration?: 'STRIKETHROUGH' | 'UNDERLINE';
   /** Line height as a percentage of the font size. Only returned when lineHeightPercent is not 100. */
   readonly lineHeightPercentFontSize?: number;
+  /** Dimensions along which text will auto resize, default is that the text does not auto-resize. */
+  readonly textAutoResize?: AutoResize;
 }
 
 /**
